@@ -1,0 +1,11 @@
+{
+  "name": "kotht-linked-lists",
+  "version": "1.0.0",
+  "description": "Linked list data structure example/practice for Angi algorithms guild (Knights of the Hash Table)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Emerson",
+  "license": "ISC"
+}
