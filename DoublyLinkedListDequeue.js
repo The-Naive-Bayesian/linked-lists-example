@@ -60,4 +60,4 @@ class Node {
   }
 }
 
-module.exports = DoublyLinkedListStack;
+module.exports = DoublyLinkedListDequeue;

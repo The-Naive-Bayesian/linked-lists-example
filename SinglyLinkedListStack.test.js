@@ -1,19 +1,12 @@
-const singlyLinkedListStack = require('./SinglyLinkedListStack');
+const SinglyLinkedListStack = require('./SinglyLinkedListStack');
 
 it('builds', () => {
-  const list = new singlyLinkedListStack();
+  const list = new SinglyLinkedListStack();
   expect(list.size).toBe(0);
 });
 
 it ('adds a value without error', () => {
-  const list = new singlyLinkedListStack();
-  list.push(5);
-  list.push(2);
-  list.push(10);
-});
-
-it ('adds a value without error', () => {
-  const list = new singlyLinkedListStack();
+  const list = new SinglyLinkedListStack();
   const values = [5, 2, 10];
   values.forEach(value => list.push(value));
 
@@ -21,7 +14,7 @@ it ('adds a value without error', () => {
 });
 
 it ('adds values in LIFO order', () => {
-  const list = new singlyLinkedListStack();
+  const list = new SinglyLinkedListStack();
   const values = [5, 2, 10];
   values.forEach(value => list.push(value));
 
@@ -32,7 +25,7 @@ it ('adds values in LIFO order', () => {
 });
 
 it('pops values in LIFO order', () => {
-  const list = new singlyLinkedListStack();
+  const list = new SinglyLinkedListStack();
   const values = [5, 2, 10];
   values.forEach(value => list.push(value));
 
