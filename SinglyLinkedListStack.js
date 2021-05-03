@@ -1,11 +1,21 @@
-class SinglyLinkedList {
+class SinglyLinkedListStack {
   root = null;
+  size = 0;
 
-  add(value) {
+  push(value) {
     const newNode = new Node(value);
 
     newNode.next = this.root;
     this.root = newNode;
+  }
+
+  pop() {
+    if (!root) return null;
+
+    const val = root.value;
+    this.root = root.next;
+
+    return val;
   }
 
   forEach(fn) {
@@ -26,4 +36,4 @@ class Node {
   }
 }
 
-module.exports = SinglyLinkedList;
+module.exports = SinglyLinkedListStack;
