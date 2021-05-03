@@ -7,13 +7,15 @@ class SinglyLinkedListStack {
 
     newNode.next = this.root;
     this.root = newNode;
+    this.size++;
   }
 
   pop() {
-    if (!root) return null;
+    if (!this.root) return null;
 
-    const val = root.value;
-    this.root = root.next;
+    const val = this.root.value;
+    this.root = this.root.next;
+    this.size--;
 
     return val;
   }
