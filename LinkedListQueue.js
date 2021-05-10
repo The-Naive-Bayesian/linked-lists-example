@@ -1,4 +1,4 @@
-class DoublyLinkedListDequeue {
+class LinkedListQueue {
   root = null;
   last = null;
   size = 0;
@@ -26,7 +26,7 @@ class DoublyLinkedListDequeue {
     this.size++;
   }
 
-  pop() {
+  _pop() {
     if (!this.root) return null;
 
     const val = this.root.value;
@@ -39,7 +39,7 @@ class DoublyLinkedListDequeue {
   }
 
   dequeue() {
-    return this.pop();
+    return this._pop();
   }
 
   forEach(fn) {
@@ -60,4 +60,4 @@ class Node {
   }
 }
 
-module.exports = DoublyLinkedListDequeue;
+module.exports = LinkedListQueue;

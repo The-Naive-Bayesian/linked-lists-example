@@ -1,4 +1,4 @@
-const DoublyLinkedListDequeue = require('./DoublyLinkedListDequeue');
+const DoublyLinkedListDequeue = require('./LinkedListQueue');
 
 it('builds', () => {
   const list = new DoublyLinkedListDequeue();
@@ -51,7 +51,7 @@ it('pops values in LIFO order after pushes', () => {
   const results = [];
   for (let i=0; i < values.length; i++) {
     console.log('i = ' + i);
-    results.push(list.pop());
+    results.push(list._pop());
   }
 
   expect(results).toEqual(values.reverse());
